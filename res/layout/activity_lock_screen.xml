@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lockscreen"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+    <ImageView
+        android:id="@+id/ImgBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+		/>
+    
+    <ImageView
+        android:id="@+id/ImgFondo"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+		android:background="#96140000"
+		/>
+    
+     <ImageView
+         android:id="@+id/ImgBar"
+         android:layout_width="match_parent"
+         android:layout_height="70dp"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+         android:alpha="100"
+         android:scaleX="0.5"
+         android:scaleY="0.25"
+         android:src="@drawable/barrablank" />
+    
+    <ImageView
+        android:id="@+id/ImgInet"
+        android:layout_width="105dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/transparent"
+        android:scaleX="0.4"
+        android:scaleY="0.4"
+        android:src="@drawable/inetblank" />
+
+    <ImageView
+        android:id="@+id/ImgUnlock"
+        android:layout_width="108dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:scaleX="0.4"
+        android:scaleY="0.4"
+        android:src="@drawable/unlockblank" />
+
+    <ImageView
+        android:id="@+id/ImgBoton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#00000000"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:src="@drawable/circuloblank" />
+    
+    <ImageView
+        android:id="@+id/ImgFondoReloj"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="28dp"
+        android:layout_width="130dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/TxtFecha"
+        android:layout_centerHorizontal="true"
+        android:background="#96140000" />
+    
+    <TextView
+        android:id="@+id/TxtHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="20:30"
+        android:textSize="50sp"
+        android:textColor="#FFFFFFFF"/>
+
+    <TextView
+        android:id="@+id/TxtFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="78dp"
+        android:layout_centerHorizontal="true"
+        android:text="mié,  abril 16"
+        android:textColor="#FFFFFFFF"
+        android:textSize="15sp" />
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    tools:context=".SplashScreenActivity" >
+
+    <ImageView
+        android:id="@+id/ImgLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="75dp"
+        android:contentDescription="@string/app_name"
+        android:scaleX="0.93"
+        android:scaleY="0.93"
+        android:src="@drawable/unlock_logo" />
+
+    <ImageView
+        android:id="@+id/ImgTTO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ImgLogo"
+        android:layout_alignParentLeft="true"
+        android:contentDescription="@string/app_name"
+        android:scaleX="0.75"
+        android:scaleY="0.75"
+        android:alpha="0"
+        android:src="@drawable/take_the_opportunity"
+        android:translationX="13dp" />
+
+</RelativeLayout>
