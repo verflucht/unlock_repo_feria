@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF" >
+
+    <Button
+        android:id="@+id/BtnActualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Actualizar" />
+
+    <EditText
+        android:id="@+id/TxtLongitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TxtLatitud"
+        android:layout_alignLeft="@+id/TxtLatitud"
+        android:ems="10" 
+        android:enabled="false"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TxtLatitud"
+        android:layout_alignBottom="@+id/TxtLatitud"
+        android:layout_alignLeft="@+id/textView1"
+        android:text="Long:"
+        android:textColor="#9F000000" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TxtLongitud"
+        android:layout_alignBottom="@+id/TxtLongitud"
+        android:layout_marginRight="21dp"
+        android:layout_toLeftOf="@+id/TxtLongitud"
+        android:text="Lat:"
+        android:textColor="#9F000000" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="Localización GPS"
+        android:textSize="20sp"
+        android:textColor="#9F000000" />
+
+    <Button
+        android:id="@+id/BtnDesactivar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BtnActualizar"
+        android:layout_centerHorizontal="true"
+        android:text="Desactivar" 
+        android:enabled="false"/>
+
+    <EditText
+        android:id="@+id/TxtLatitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/BtnActualizar"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:enabled="false" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/TxtLatitud"
+        android:layout_below="@+id/BtnDesactivar"
+        android:layout_marginTop="45dp"
+        android:text="Volver"
+        android:visibility="invisible" />
+    
+</RelativeLayout>

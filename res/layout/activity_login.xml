@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    tools:context=".SplashScreenActivity" >
+
+    <ImageView
+        android:id="@+id/ImgTTO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ImgLogo"
+        android:layout_alignParentLeft="true"
+        android:contentDescription="@string/app_name"
+        android:scaleX="0.75"
+        android:scaleY="0.75"
+        android:src="@drawable/take_the_opportunity"
+        android:translationX="13dp" />
+
+    <ImageView
+        android:id="@+id/ImgLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="65dp"
+        android:contentDescription="@string/app_name"
+        android:scaleX="0.93"
+        android:scaleY="0.93"
+        android:src="@drawable/unlock_logo" />
+
+    <ImageView
+        android:id="@+id/BtnFacebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/BtnTwitter"
+        android:layout_marginRight="0dp"
+        android:layout_toLeftOf="@+id/BtnTwitter"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:translationX="22dp"
+        android:translationY="-17dp"
+        android:src="@drawable/facebook" />
+
+    <ImageView
+        android:id="@+id/BtnEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/BtnTwitter"
+        android:layout_marginLeft="0dp"
+        android:layout_toRightOf="@+id/BtnTwitter"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:translationX="-22dp"
+        android:translationY="-17dp"
+        android:src="@drawable/email" />
+
+    <ImageView
+        android:id="@+id/BtnTwitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:translationY="-17dp"
+        android:src="@drawable/twitter" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ImgTTO"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="45dp"
+        android:text="@string/sign_in"
+        android:textColor="#FF000000"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/imgfondo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:scaleX="1"
+        android:scaleY="1.8"
+        android:src="@drawable/fondo_rojo" />
+
+    <ImageView
+        android:id="@+id/BtnCreateAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:scaleX="0.6"
+        android:scaleY="0.6"
+        android:translationY="2dp"
+        android:src="@drawable/create_account" />
+    
+</RelativeLayout>

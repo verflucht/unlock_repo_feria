@@ -1,11 +1,67 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:id="@+id/contenedor"
+    android:background="#FFFFFFFF" >
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/mensaje" />
+        android:text="@string/mensaje"
+        android:textColor="#9F000000" />
+
+    <ProgressBar
+        android:id="@+id/ProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/BtnDownload"
+        android:layout_marginTop="20dp"
+        android:max="100"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/BtnDownload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Download"
+        android:textColor="#FFFFFFFF"
+        android:textColorHint="#FFE00A19" />
+
+    <TextView
+        android:id="@+id/TxtDownload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ProgressBar"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/BtnCerrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="29dp"
+        android:layout_toRightOf="@+id/BtnGPS"
+        android:text="Cerrar sesión"
+        android:textColorHint="#FFE00A19"
+        android:textColor="#FFFFFFFF" />
+
+    <Button
+        android:id="@+id/BtnGPS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TxtDownload"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Localización"
+        android:textColor="#FFFFFFFF"
+        android:textColorHint="#FFE00A19" />
+
 </RelativeLayout>

@@ -6,18 +6,6 @@
     tools:context=".SplashScreenActivity" >
 
     <ImageView
-        android:id="@+id/ImgLogo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="75dp"
-        android:contentDescription="@string/app_name"
-        android:scaleX="0.93"
-        android:scaleY="0.93"
-        android:src="@drawable/unlock_logo" />
-
-    <ImageView
         android:id="@+id/ImgTTO"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -30,4 +18,16 @@
         android:src="@drawable/take_the_opportunity"
         android:translationX="13dp" />
 
+    <ImageView
+        android:id="@+id/ImgLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="65dp"
+        android:contentDescription="@string/app_name"
+        android:scaleX="0.93"
+        android:scaleY="0.93"
+        android:src="@drawable/unlock_logo" />
+    
 </RelativeLayout>

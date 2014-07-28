@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imgfondo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:scaleX="1"
+        android:scaleY="1.4"
+        android:src="@drawable/fondo_rojo" />
+
+    <ImageView
+        android:id="@+id/BtnCreateAccount_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleX="0.4"
+        android:scaleY="0.4"
+        android:src="@drawable/create_account_2"
+        android:translationX="-90dp"
+        android:translationY="-5dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/BtnCreateAccount_2"
+        android:text="   Nombre completo"
+        android:textColor="#FF000000" />
+
+    <EditText
+        android:id="@+id/TxtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#FF000000">
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TxtNombre"
+        android:text="   Correo electrónico"
+        android:textColor="#FF000000" />
+
+    <EditText
+        android:id="@+id/TxtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TxtNombre"
+        android:layout_below="@+id/textView2"
+        android:ems="10"
+        android:inputType="textEmailAddress" 
+        android:textColor="#FF000000"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TxtEmail"
+        android:text="   Nombre de usuario"
+        android:textColor="#FF000000" />
+
+    <EditText
+        android:id="@+id/TxtUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TxtEmail"
+        android:layout_below="@+id/textView3"
+        android1:layout_alignRight="@+id/TxtEmail"
+        android:ems="10"
+        android:inputType="textPersonName" 
+        android:textColor="#FF000000"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TxtUser"
+        android:text="   Contraseña"
+        android:textColor="#FF000000"/>
+
+    <EditText
+        android:id="@+id/TxtPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TxtUser"
+        android:layout_below="@+id/textView4"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="#FF000000"
+        android1:hint="Mínimo 6 caracteres" />
+
+    <ImageView
+        android1:id="@+id/BtnRegistrarse"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignRight="@+id/BtnCreateAccount_2"
+        android1:layout_below="@+id/TxtPass"
+        android1:layout_marginTop="28dp"
+        android1:scaleX="0.8"
+        android1:scaleY="0.8"
+        android1:src="@drawable/registrarse" />
+
+</RelativeLayout>

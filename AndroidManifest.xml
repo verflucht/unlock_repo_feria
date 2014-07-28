@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.unlock_prot"
+    package="com.example.unlock_entrega"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -10,7 +10,11 @@
     <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
-    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/> 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     
     <application
         android:allowBackup="true"
@@ -18,25 +22,44 @@
         android:label="@string/app_name">
         
         <activity 
-            android:name=".SplashScreenActivity"
+            android:name="com.example.unlock_entrega.SplashScreenActivity"
             android:label="@string/app_name"
           	android:screenOrientation="portrait">
           	
           	<intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />                
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.unlock_entrega.MainActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.unlock_entrega.LoginActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.unlock_entrega.CreateAccountActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.unlock_entrega.LocationActivity"
             android:label="@string/app_name" 
             android:screenOrientation="portrait">
         </activity>
         <activity 
-            android:name=".LockScreenActivity"
+            android:name="com.example.unlock_entrega.LockScreenActivity"
             android:label="@string/app_name"
           	android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+          	android:screenOrientation="portrait">
+        </activity>
+        <activity 
+            android:name="com.example.unlock_entrega.DownloadImage"
+            android:label="@string/app_name"
           	android:screenOrientation="portrait">
         </activity>
         <service android:name=".MyService" >

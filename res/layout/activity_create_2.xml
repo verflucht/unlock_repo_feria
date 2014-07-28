@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+        <ImageView
+        	android:id="@+id/imgfondo"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:scaleX="1"
+        	android:scaleY="1.4"
+        	android:src="@drawable/fondo_rojo" />
+
+    	<ImageView
+        	android:id="@+id/BtnCreateAccount_2"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:layout_alignParentTop="true"
+        	android:scaleX="0.4"
+        	android:scaleY="0.4"
+        	android:src="@drawable/create_account_2"
+        	android:translationX="-90dp"
+        	android:translationY="-5dp" />
+    </RelativeLayout>
+    
+    <ScrollView 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent">
+          
+        <LinearLayout 
+            android:orientation="vertical" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="fill_parent" 
+            	android:layout_height="wrap_content"
+                android:text="   Nombre completo"
+                android:textColor="#FF000000" />
+
+            <EditText
+                android:id="@+id/TxtNombre"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:ems="10"
+                android:hint="Nombre"
+                android:inputType="textPersonName"
+                android:textColor="#FF000000" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="   Correo electrónico"
+                android:textColor="#FF000000" />
+
+            <EditText
+                android:id="@+id/TxtEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:ems="10"
+                android:hint="example@mail.com"
+                android:inputType="textEmailAddress"
+                android:textColor="#FF000000" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="   Nombre de usuario"
+                android:textColor="#FF000000" />
+
+            <EditText
+                android:id="@+id/TxtUser"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:ems="10"
+                android:hint="Usuario"
+                android:inputType="textPersonName"
+                android:textColor="#FF000000" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="   Contraseña"
+                android:textColor="#FF000000" />
+
+            <EditText
+                android:id="@+id/TxtPass"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:ems="10"
+                android:hint="Al menos 6 caracteres"
+                android:inputType="textPassword"
+                android:textColor="#FF000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="182dp"
+                android:background="#08000000"
+                android:orientation="vertical"
+                android:translationY="10dp" >
+
+                <ImageView
+                    android:id="@+id/BtnRegistrarse"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.8"
+                    android:scaleY="0.8"
+                    android:src="@drawable/registrarse" />
+                
+                <TextView
+                	android:id="@+id/textView5"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:layout_marginLeft="15dp"
+                	android:layout_marginRight="15dp"
+                	android:textColor="#FF000000"
+                	android:text="@string/condicion_registro" />
+                
+            </LinearLayout>
+   
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
